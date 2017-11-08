@@ -14,6 +14,12 @@ Then get the app setup by running:
 
 Now you're ready to boot up the API with the command `rails s`!
 
+## Backgrounding
+
+There's no need to install Redis or any other queuing frameworks - the API server is just
+using the standard Rails 5 `Async` adapter which forks off threads to do
+async jobs.
+
 ## Game
 
 I included a script that has a simple CLI interface to simulate a game
